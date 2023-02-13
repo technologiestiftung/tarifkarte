@@ -51,7 +51,7 @@ git clone git@github.com:technologiestiftung/tarifzonen.git
 Move into the repository folder:
 
 ```bash
-cd energiekarte
+cd tarifzonen
 ```
 
 Make sure you use the Node.js version specified in `.nvmrc`. Find out which Node version you're currently on with:
