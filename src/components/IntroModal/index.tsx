@@ -62,8 +62,7 @@ export const IntroModal: FC<IntroModalType> = ({ modalOpen, setModalOpen }) => {
                 </a>{" "}
                 liegt die Tarifzone C ca. 15 km um Berlin. Eine genaue Grenze
                 gibt es nicht. Bei Strausberg reicht die Trafizone C fast 20 km.
-                In der Umgebung von Königswusterhausen dagegen deutlich unter 15
-                km.
+                In der Umgebung von Erkner dagegen deutlich unter 15 km.
                 <br />
                 <br />
                 Exploriere die Karte indem du hereinzoomst. Die weißen Punkte
