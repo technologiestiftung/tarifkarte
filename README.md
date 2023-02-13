@@ -8,30 +8,96 @@
 
 # Berliner Tarfizonen
 
+## Imporant
 
-## Prerequisites
+This repo is currently a work in progress! 
 
-tbd...
+## Context
+   
+This application is based on open data. Open data is an important part of Berlin's administrative activities and not only creates transparency and openness, but also enables analysis and applications like this. You can find more open data at the [Berlin Open Data Portal](https://daten.berlin.de).
 
-## Installation
+## Data
 
-tbd...
+wip
+   
+## Tech stack
 
-## Usage or Deployment
+This website is a NextJS app configured with:
 
-tbd...
+- [Typescript](https://www.typescriptlang.org/)
+- Linting with [ESLint](https://eslint.org/)
+- Formatting with [Prettier](https://prettier.io/)
 
-## Development
+## Project structure
 
-tbd...
+Basic Next.js app
 
-## Tests
+## Getting started
 
-tbd...
+### Requirements
 
-## Contributing
+#### Node.js
 
-Before you create a pull request, write an issue so we can discuss your changes.
+This project is a Next.js app which requires you to have [Node.js](https://nodejs.org/en/) installed.
+
+### Installation
+
+Clone the repository to your local machine:
+
+```bash
+git clone git@github.com:technologiestiftung/tarifzonen.git
+```
+
+Move into the repository folder:
+
+```bash
+cd energiekarte
+```
+
+Make sure you use the Node.js version specified in `.nvmrc`. Find out which Node version you're currently on with:
+
+```bash
+node --version
+```
+
+If this version differs from the one specified in `.nvmrc`, please install the required version, either manually, or using a tool such as [nvm](https://github.com/nvm-sh/nvm), which allows switching to the correct version via:
+
+```bash
+nvm use
+```
+
+With the correct Node version, install the dependencies:
+
+```bash
+npm install
+```
+You are now ready to start a local development server on http://localhost:3000 via:
+
+```bash
+npm run dev
+```
+
+## Workflow
+
+New features, fixes, etc. should always be developed on a separate branch:
+
+- In your local repository, checkout the `main` branch.
+- Run `git checkout -b <name-of-your-branch>` to create a new branch (ideally following [Conventional Commits guidelines](https://www.conventionalcommits.org)).
+- Make your changes
+- Push your changes to the remote: `git push -u origin HEAD`
+- Open a pull request.
+
+You can commit using the `npm run cm` command to ensure your commits follow our conventions.
+
+## Deployment
+
+The app is deployed to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+## Page analytics
+
+We use [Matomo](https://matomo.org/) for website analytics. Matomo is respectful of the users' privacy, the page visits are tracked anonymously.
+
+In the production environment, a `NEXT_PUBLIC_MATOMO_URL` and `NEXT_PUBLIC_MATOMO_SITE_ID` is configured for this purpose.
 
 ## Contributors
 
@@ -41,8 +107,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-  </tr>
+  <tbody>
+    <tr>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
@@ -86,4 +154,3 @@ Illustrations by {MARIA_MUSTERFRAU}, all rights reserved.
   </tr>
 </table>
 
-## Related Projects
