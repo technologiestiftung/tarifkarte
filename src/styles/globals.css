@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@layer base {
+  @font-face {
+    font-family: "Clan Medium";
+    src: url("/fonts/clan-medium.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Clan Book";
+    src: url("/fonts/clan-book.woff") format("woff");
+  }
+
+  html,
+  body,
+  #__next {
+    font-family: "Clan Book", sans-serif;
+    color: #222222;
+  }
+}
+
+.maplibregl-popup-close-button {
+  margin-right: 5px;
+}
+
+.popup-link {
+  color: #008291;
+  font-weight: bold;
+}
