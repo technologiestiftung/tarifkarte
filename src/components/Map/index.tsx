@@ -29,7 +29,8 @@ export const MapComponent: FC<MapComponentType> = ({ data }) => {
     zoom: mapZoom,
   };
 
-  var popup;
+  // @ts-ignore
+  let popup;
   let wasClicked = false;
   let stationNameOld = "";
   const onMapCLick = (e: any): void => {
@@ -45,6 +46,8 @@ export const MapComponent: FC<MapComponentType> = ({ data }) => {
     if (e.type === "click") {
       wasClicked = true;
     }
+    // @ts-ignore
+
     if (popup && !wasClicked) {
       popup.remove();
     }
@@ -59,10 +62,14 @@ export const MapComponent: FC<MapComponentType> = ({ data }) => {
 
     stationName = stationName[0].properties?.stop_name;
     if (e.type === "click") {
+      // @ts-ignore
       stationNameOld = stationName;
     }
+    // @ts-ignore
+
     if (popup && stationNameOld != stationName) {
       popup.remove();
+      // @ts-ignore
       stationNameOld = stationName;
       console.log(stationNameOld);
     }
@@ -74,6 +81,7 @@ export const MapComponent: FC<MapComponentType> = ({ data }) => {
       .setLngLat(e.lngLat)
       .setHTML("<p>" + stationName + "</p>")
       .setMaxWidth("300px")
+      // @ts-ignore
       .addTo(mapRef.current?.getMap());
 
     if (e.type === "click") {
@@ -84,9 +92,10 @@ export const MapComponent: FC<MapComponentType> = ({ data }) => {
             stationName +
             "</p><a class='popup-link' href='https://fahrinfo.vbb.de/webapp/?v=2.0&REQ0JourneyStopsZ0A=1&Z=" +
             stationName +
-            "' target='_blank'>Bei der VBB Info finden</a>"
+            "' target='_blank' rel='noreferrer'>Bei der VBB Info finden</a>"
         )
         .setMaxWidth("300px")
+        // @ts-ignore
         .addTo(mapRef.current?.getMap());
     }
   };
@@ -122,6 +131,8 @@ export const MapComponent: FC<MapComponentType> = ({ data }) => {
         mapLib={maplibregl}
         initialViewState={{ ...startMapView }}
         // mapStyle={process.env.NEXT_PUBLIC_MAPTILER_STYLE}
+        // @ts-ignore
+
         mapStyle={mapStyle()}
         onClick={onMapCLick}
         onMouseMove={onMapCLick}
@@ -144,16 +155,21 @@ export const MapComponent: FC<MapComponentType> = ({ data }) => {
         <Source id="zoneA" type="geojson" data={data.zoneA}>
           {/* @ts-ignore */}
           <Layer {...layerStyles["zoneA"]} />
+          {/* @ts-ignore */}
+
           <Layer {...layerStyles["zoneALine"]} />
         </Source>
         <Source id="zoneB" type="geojson" data={data.zoneB}>
           {/* @ts-ignore */}
           <Layer {...layerStyles["zoneB"]} />
+          {/* @ts-ignore */}
+
           <Layer {...layerStyles["zoneBLine"]} />
         </Source>{" "}
         <Source id="zoneC" type="geojson" data={data.zoneC}>
           {/* @ts-ignore */}
           <Layer {...layerStyles["zoneC"]} />
+          {/* @ts-ignore */}
           <Layer {...layerStyles["zoneCLine"]} />
         </Source>
         <Source id="berlinBuffer" type="geojson" data={data.berlinBuffer}>
@@ -218,7 +234,11 @@ export const MapComponent: FC<MapComponentType> = ({ data }) => {
           {/* <a href="https://www.maptiler.com/copyright/" target="_blank">
             © MapTiler
           </a>{" "} */}
-          <a href="https://www.openstreetmap.org/copyright" target="_blank">
+          <a
+            href="https://www.openstreetmap.org/copyright"
+            target="_blank"
+            rel="noreferrer"
+          >
             © OpenStreetMap contributors
           </a>
         </div>
