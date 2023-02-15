@@ -82,7 +82,7 @@ export const IntroModal: FC<IntroModalType> = ({ modalOpen, setModalOpen }) => {
                 >
                   Haltestellen Daten
                 </a>{" "}
-                kommen vom Berliner Open Data Portal. Sie wurden zusätzlich
+                kommen vom Berliner Open Data Portal. Sie wurden zusätzlich mit
                 <a
                   className="text-zoneb"
                   target="_blank"
