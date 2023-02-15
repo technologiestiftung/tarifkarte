@@ -22,21 +22,14 @@ export default function Home(mapData: any) {
   return (
     <>
       <Head />
-
       <MapComponent data={mapData} />
       <IntroModal modalOpen={modalOpen} setModalOpen={setModalOpen} />
-      {/* <button
-        className="fixed w-10 h-10 rounded bg-white left-0 top-0 z-20 m-4 text-center"
-        onClick={openModal}
-      >
-        <Info></Info>
-      </button> */}
       <button
         className="drop-shadow-md  fixed left-2/4 -translate-x-2/4 w-fit inline rounded bg-white md:text-2xl top-0 z-20 m-4 p-2 hover:bg-black border-black hover:text-white"
         onClick={openModal}
       >
         {" "}
-        Berliner Tarifzonen Karte
+        Berliner Tarifkarte
       </button>
     </>
   );

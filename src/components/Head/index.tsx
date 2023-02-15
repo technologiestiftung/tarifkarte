@@ -27,7 +27,7 @@ interface HeadPropType {
 export const Head: FC<Partial<HeadPropType>> = ({
   description = "Wo verläuft die Berliner Tarifzone C des öffentlichen Nahverkehrs eigentlich genau? Und welche Stationen kannst du noch mit einem einfachen ABC Ticket erreichen? Auf der Karte kannst du es herausfinden.",
   siteTitle = "tarifkarte.odis-berlin.de",
-  pageTitle = "Berliner Traifkarte",
+  pageTitle = "Berliner Tarifkarte",
   fbAppId = "",
   keywords = [
     "Berlin",
