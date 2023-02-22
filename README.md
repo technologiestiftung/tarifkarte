@@ -6,7 +6,7 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-# Berliner Tarfizonen
+# Berliner Tarifzonen
 
 ## Imporant
 
