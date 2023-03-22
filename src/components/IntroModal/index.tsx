@@ -57,18 +57,18 @@ export const IntroModal: FC<IntroModalType> = ({ modalOpen, setModalOpen }) => {
                   rel="noreferrer"
                   href="https://www.bvg.de/de/abos-und-tickets/tarifzonen-und-tarifbestimmungen"
                 >
-                  Berliner Verkehrbetrieben (BVG)
+                  Berliner Verkehrsbetrieben (BVG)
                 </a>{" "}
                 erstreckt sich die <span className="italic">Tarifzone C</span>{" "}
                 in einem ca. 15 km weitem Radius um Berlin. Eine genaue Grenze
-                gibt es nicht. Bei Strausberg erreicht die Trafizone C fast 20
+                gibt es nicht. Bei Strausberg erreicht die Tarifzone C fast 20
                 km - bei Erkner liegt sie deutlich unter 15 km.
               </p>
               <p className="pb-6">
                 <span className="font-bold">How to:</span> Exploriere die Karte
                 durch einfaches Reinzoomen. Die weißen Punkte repräsentieren
                 Haltestellen, deren Namen du durch Hovern und Klicken abrufen
-                kannst. So bekommst du außerdem einen Link zum Verkerhrsverbung
+                kannst. So bekommst du außerdem einen Link zum Verkehrsverbund
                 Berlin Brandenburg (VBB).
               </p>
               <p className="text-sm">
@@ -80,7 +80,7 @@ export const IntroModal: FC<IntroModalType> = ({ modalOpen, setModalOpen }) => {
                   rel="noreferrer"
                   href="https://daten.berlin.de/datensaetze/vbb-fahrplandaten-gtfs"
                 >
-                  Haltestellen Daten
+                  Haltestellendaten
                 </a>{" "}
                 kommen vom Berliner Open Data Portal. Sie wurden zusätzlich mit
                 <a
