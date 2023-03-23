@@ -58,7 +58,7 @@ export const IntroModal: FC<IntroModalType> = ({ modalOpen, setModalOpen }) => {
                   rel="noreferrer"
                   href="https://www.bvg.de/de/abos-und-tickets/tarifzonen-und-tarifbestimmungen"
                 >
-                  Berliner Verkehrbetrieben (BVG)
+                  Berliner Verkehrsbetrieben (BVG)
                 </a>{" "}
                 erstreckt sich die <span className="italic">Tarifzone C</span>{" "}
                 in einem ca. 15 km weitem Radius um Berlin. Eine genaue
@@ -70,7 +70,7 @@ export const IntroModal: FC<IntroModalType> = ({ modalOpen, setModalOpen }) => {
                 <span className="font-bold">How to:</span> Exploriere die Karte
                 durch einfaches Reinzoomen. Die weißen Punkte repräsentieren
                 Haltestellen, deren Namen du durch Hovern und Klicken abrufen
-                kannst. So bekommst du außerdem einen Link zum Verkerhrsverbung
+                kannst. So bekommst du außerdem einen Link zum Verkehrsverbund
                 Berlin Brandenburg (VBB).
               </p>
               <p className="text-sm">
@@ -82,7 +82,7 @@ export const IntroModal: FC<IntroModalType> = ({ modalOpen, setModalOpen }) => {
                   rel="noreferrer"
                   href="https://daten.berlin.de/datensaetze/vbb-fahrplandaten-gtfs"
                 >
-                  Haltestellen Daten
+                  Haltestellendaten
                 </a>{" "}
                 kommen vom Berliner Open Data Portal. Sie wurden zusätzlich mit
                 <a
@@ -149,7 +149,6 @@ export const IntroModal: FC<IntroModalType> = ({ modalOpen, setModalOpen }) => {
                 </p>
                 <div className="inline-block ml-4 md:flex self-center">
                   <div className="w-32 md:pt-4 md:pl-4">
-                    <CitylabLogoBw className={`w-30 mr-4`} />
                   </div>
                   <div className="w-32 pt-2 mr-8 md:mt-0 self-center">
                     <OdisLogo className={`w-30`} />
