@@ -2,8 +2,9 @@ import { FC } from "react";
 import { Dialog } from "@headlessui/react";
 import { Cross } from "../Icons";
 
-import { TsbLogo } from "@components/Logos/TsbLogo";
+// import { TsbLogo } from "@components/Logos/TsbLogo";
 import { OdisLogo } from "@components/Logos/OdisLogo";
+import { CitylabLogoBw } from "../Logos/CitylabLogoBw";
 
 export interface IntroModalType {
   modalOpen: boolean;
@@ -32,7 +33,7 @@ export const IntroModal: FC<IntroModalType> = ({ modalOpen, setModalOpen }) => {
         <div className="fixed inset-0 bg-white/80" aria-hidden="true" />
         <div className="fixed inset-0 overflow-y-auto">
           <div className="flex min-h-full items-center justify-center p-4 leading-7">
-            <Dialog.Panel className="border border-primary/50  bg-white text-black/90 max-h-full p-6 max-w-xs md:max-w-none filter drop-shadow-lg rounded-lg md:min-w-xl md:w-1/2 mx-auto transition-all">
+            <Dialog.Panel className="w-10/12 border border-primary/50  bg-white text-black/90 max-h-full p-6 md:max-w-none filter drop-shadow-lg rounded-lg md:min-w-xl lg:w-1/2 mx-auto transition-all">
               <button
                 className="text-black focus:outline-none top-0 right-0 m-4 absolute cursor-pointer z-20 hover:bg-black border-black border-2 rounded-full p-1 hover:text-white"
                 onClick={closeModal}
@@ -60,9 +61,10 @@ export const IntroModal: FC<IntroModalType> = ({ modalOpen, setModalOpen }) => {
                   Berliner Verkehrbetrieben (BVG)
                 </a>{" "}
                 erstreckt sich die <span className="italic">Tarifzone C</span>{" "}
-                in einem ca. 15 km weitem Radius um Berlin. Eine genaue Grenze
-                gibt es nicht. Bei Strausberg erreicht die Trafizone C fast 20
-                km - bei Erkner liegt sie deutlich unter 15 km.
+                in einem ca. 15 km weitem Radius um Berlin. Eine genaue
+                geografische Grenze gibt es nicht. Bei Strausberg erreicht die
+                Trafizone C fast 20 km - bei Erkner liegt sie deutlich unter 15
+                km.
               </p>
               <p className="pb-6">
                 <span className="font-bold">How to:</span> Exploriere die Karte
@@ -147,7 +149,7 @@ export const IntroModal: FC<IntroModalType> = ({ modalOpen, setModalOpen }) => {
                 </p>
                 <div className="inline-block ml-4 md:flex self-center">
                   <div className="w-32 md:pt-4 md:pl-4">
-                    <TsbLogo className={`w-30`} />
+                    <CitylabLogoBw className={`w-30 mr-4`} />
                   </div>
                   <div className="w-32 pt-2 mr-8 md:mt-0 self-center">
                     <OdisLogo className={`w-30`} />

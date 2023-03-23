@@ -8,6 +8,16 @@ body {
   margin: 0;
 }
 
+.st0 {
+  fill: #1d1d1b;
+}
+.st1 {
+  fill: none;
+  stroke: #1d1d1b;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
 @layer base {
   @font-face {
     font-family: "Clan Medium";
