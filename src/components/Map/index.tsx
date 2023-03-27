@@ -13,7 +13,7 @@ import { useState } from "react";
 import { layerStyles } from "./layerStyles";
 import { MapNav } from "@components/MapNav";
 
-// import { useHasMobileSize } from '@lib/hooks/useHasMobileSize'
+import { useHasMobileSize } from "@lib/hooks/useHasMobileSize";
 
 export interface MapComponentType {
   data: any;
@@ -28,6 +28,8 @@ export const MapComponent: FC<MapComponentType> = ({ data }) => {
     latitude: 52.510831578689704,
     zoom: mapZoom,
   };
+
+  const hasMobileSize = useHasMobileSize();
 
   // @ts-ignore
   let popup;
@@ -112,6 +114,11 @@ export const MapComponent: FC<MapComponentType> = ({ data }) => {
       return;
     }
     setMapZoom(mapRef.current.getZoom());
+
+    if (hasMobileSize) {
+      const map = mapRef.current.getMap();
+      map.scrollZoom.disable();
+    }
   };
   useEffect(() => {
     if (mapRef.current) {
