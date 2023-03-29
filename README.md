@@ -13,7 +13,7 @@ Where exactly does Berlin's public transport fare zone C run? Which stations can
 This application is based on open data. Open data is an important part of Berlin's administrative activities and not only creates transparency and openness, but also enables analysis and applications like this. You can find more open data at the [Berlin Open Data Portal](https://daten.berlin.de).
 
 ## Data
-Data used to create to map:
+Data used to create the map:
 - [VBB-Fahrplandaten via GTFS](https://daten.berlin.de/datensaetze/vbb-fahrplandaten-gtfs)
 - [VBB Alle Zielorte](https://www.vbb.de/fileadmin/user_upload/VBB/Dokumente/API-Datensaetze/vbb-alle-zielorte.csv)
    
