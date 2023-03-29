@@ -119,26 +119,6 @@ export const IntroModal: FC<IntroModalType> = ({ modalOpen, setModalOpen }) => {
                 <br />
               </p>
 
-              {/* <p className="text-sm">Stand: Februar 2023</p> */}
-
-              {/* <button
-                className="border px-4 bg-primary font-bold  p-2 text-bold rounded hover:border-primary hover:bg-black border-black hover:text-white"
-                onClick={() =>
-                  (function () {
-                    setModalOpen(false);
-                  })()
-                }
-              >
-                Schließen
-              </button> */}
-
-              {/* <button
-                className="px-4 ml-4 bg-white text-gray-500 text-bold hover:text-primary p-2 rounded "
-                onClick={closeModalInfo}
-              >
-                Mehr Infos
-              </button> */}
-
               <div className="grid md:grid-cols-[1fr,auto] gap-4 mt-2 md:mt-2">
                 <p className="text-xs mb-2 md:mb-0 text-gray-500 max-w-md pt-4">
                   <i>

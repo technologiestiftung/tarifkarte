@@ -25,7 +25,7 @@ interface HeadPropType {
 }
 
 export const Head: FC<Partial<HeadPropType>> = ({
-  description = "Wo verläuft die Berliner Tarifzone C des öffentlichen Nahverkehrs eigentlich genau? Und welche Stationen kannst du noch mit einem einfachen ABC Ticket erreichen? Auf der Karte kannst du es herausfinden.",
+  description = "Wo verläuft die Berliner Tarifzone C des ÖPNVs eigentlich genau? Welche Stationen kannst du mit einem einfachen ABC Ticket erreichen? Finde es auf dieser Karte heraus!",
   siteTitle = "tarifkarte.odis-berlin.de",
   pageTitle = "Berliner Tarifkarte",
   fbAppId = "",
@@ -46,7 +46,7 @@ export const Head: FC<Partial<HeadPropType>> = ({
 }) => {
   const { pathname } = useRouter();
   const longTitle = [pageTitle, siteTitle].join(" – ");
-  const formatedSocialImage = `${siteUrl}/social-image.jpg`;
+  const formatedSocialImage = `${siteUrl}/social-image.png`;
 
   return (
     <NextHead>
@@ -95,7 +95,7 @@ export const Head: FC<Partial<HeadPropType>> = ({
 
       <link rel="apple-touch-icon" href="/favicons/star.png" />
 
-      {/* <link href={faviconPath} type="image/x-icon" rel="shortcut icon" /> */}
+      <link href={faviconPath} type="image/x-icon" rel="shortcut icon" />
       <link href={faviconPNGPath} type="image/png" rel="icon" />
 
       <link rel="manifest" href="/manifest.webmanifest" />

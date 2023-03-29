@@ -5,8 +5,6 @@ import { getData } from "@lib/loadMapData";
 import { IntroModal } from "@/components/IntroModal";
 import { Head } from "@/components/Head";
 
-// import { Info } from "@/components/Icons";
-
 export async function getStaticProps() {
   const mapData = getData();
   return mapData;

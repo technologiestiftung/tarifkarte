@@ -1,11 +1,5 @@
 import { FC, useEffect, useRef, useCallback, useMemo } from "react";
-import Map, {
-  Source,
-  Layer,
-  Marker,
-  GeolocateControl,
-  Popup,
-} from "react-map-gl";
+import Map, { Source, Layer, Marker } from "react-map-gl";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import mapStyle from "./mapStyle";
@@ -101,13 +95,6 @@ export const MapComponent: FC<MapComponentType> = ({ data }) => {
         .addTo(mapRef.current?.getMap());
     }
   };
-
-  // const onZoomEnd = (e: any): void => {
-  //   if (!mapRef || !mapRef.current) {
-  //     return;
-  //   }
-  //   setMapZoom(mapRef.current.getZoom());
-  // };
 
   const onMapLoad = (e: any): void => {
     if (!mapRef || !mapRef.current) {
@@ -224,16 +211,6 @@ export const MapComponent: FC<MapComponentType> = ({ data }) => {
             20 km
           </div>
         </Marker>
-        {/* {stationName && (
-          <Popup
-            longitude={stationLng}
-            latitude={stationLat}
-            offset={[0, -10]}
-            closeButton={false}
-          >
-            {stationName}
-          </Popup>
-        )} */}
       </Map>
       <MapNav mapZoom={mapZoom} setMapZoom={setMapZoom} />
       <div>
@@ -253,16 +230,3 @@ export const MapComponent: FC<MapComponentType> = ({ data }) => {
     </div>
   );
 };
-
-// <Source id="berlin" type="geojson" data={data.berlin}>
-// {/* @ts-ignore */}
-// <Layer {...layerStyles["berlin"]} />
-// </Source>
-// <Source
-// id="berlinInnenstadt"
-// type="geojson"
-// data={data.berlinInnenstadt}
-// >
-// {/* @ts-ignore */}
-// <Layer {...layerStyles["berlinInnenstadt"]} />
-// </Source>
