@@ -6,7 +6,7 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-# Berliner Tarifzonen
+# Berliner Tarifkarte
 
 Where exactly does Berlin's public transport fare zone C run? Which stations can you reach with a simple ABC ticket? Find out on this map.
 
