@@ -6,11 +6,9 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-# Berliner Tarifzonen
+# Berliner Tarifkarte
 
-## Imporant
-
-This repo is currently a work in progress! 
+Where exactly does Berlin's public transport fare zone C run? Which stations can you reach with a simple ABC ticket? Find out on this map.
 
 ## Context
    
@@ -18,7 +16,8 @@ This application is based on open data. Open data is an important part of Berlin
 
 ## Data
 
-wip
+[VBB-Fahrplandaten via GTFS](https://daten.berlin.de/datensaetze/vbb-fahrplandaten-gtfs)
+[VBB Alle Zielorte](https://www.vbb.de/fileadmin/user_upload/VBB/Dokumente/API-Datensaetze/vbb-alle-zielorte.csv)
    
 ## Tech stack
 
