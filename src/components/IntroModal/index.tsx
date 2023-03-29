@@ -148,10 +148,11 @@ export const IntroModal: FC<IntroModalType> = ({ modalOpen, setModalOpen }) => {
                   </i>
                 </p>
                 <div className="inline-block ml-4 md:flex self-center">
-                  <div className="w-32 md:pt-4 md:pl-4">
-                  </div>
-                  <div className="w-32 pt-2 mr-8 md:mt-0 self-center">
+                  <div className="w-32 pt-4 mr-8 md:mt-0 self-center">
                     <OdisLogo className={`w-30`} />
+                  </div>
+                  <div className="w-32 pt-0 mr-8 md:mt-0 self-center">
+                    <CitylabLogoBw className={`w-30`} />
                   </div>
                 </div>
               </div>
