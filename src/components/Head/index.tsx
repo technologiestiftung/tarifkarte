@@ -46,7 +46,7 @@ export const Head: FC<Partial<HeadPropType>> = ({
 }) => {
   const { pathname } = useRouter();
   const longTitle = [pageTitle, siteTitle].join(" – ");
-  const formatedSocialImage = `${siteUrl}/social-image.png`;
+  const formatedSocialImage = `${siteUrl}/social-image.jpg`;
 
   return (
     <NextHead>
@@ -92,8 +92,6 @@ export const Head: FC<Partial<HeadPropType>> = ({
       {socialThumbnail && (
         <meta property="og:image:alt" content={socialThumbnail} />
       )}
-
-      <link rel="apple-touch-icon" href="/favicons/star.png" />
 
       <link href={faviconPath} type="image/x-icon" rel="shortcut icon" />
       <link href={faviconPNGPath} type="image/png" rel="icon" />
