@@ -16,7 +16,8 @@ This application is based on open data. Open data is an important part of Berlin
 
 ## Data
 
-wip
+[VBB-Fahrplandaten via GTFS](https://daten.berlin.de/datensaetze/vbb-fahrplandaten-gtfs)
+[VBB Alle Zielorte](https://www.vbb.de/fileadmin/user_upload/VBB/Dokumente/API-Datensaetze/vbb-alle-zielorte.csv)
    
 ## Tech stack
 
